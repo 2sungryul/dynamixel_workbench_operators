@@ -149,7 +149,6 @@ int main(int argc, char* argv[])
 {
     rclcpp::init(argc, argv);
     auto node = std::make_shared<DynamixelWorkbenchOperator>();
-    std::cout << "Enter command(s,f,b,l,r):" << std::endl;
     rclcpp::spin(node);
     rclcpp::shutdown();
     return 0;
